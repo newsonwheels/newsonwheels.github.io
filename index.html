@@ -7,27 +7,16 @@
             margin: 0;
             padding: 0;
         }
-        .full-screen-container {
-            background-image: url('Newsonwheels.jpg');
-            background-size: cover;
-            background-position: center;
-            height: 100vh;
+        .full-screen-image {
             width: 100vw;
-            position: relative;
-        }
-        .overlay-link {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            cursor: pointer;
+            height: 100vh;
+            object-fit: cover;
         }
     </style>
 </head>
 <body>
-    <div class="full-screen-container">
-        <a href="https://cust.ppruk.net/start" class="overlay-link"></a>
-    </div>
+    <a href="https://cust.ppruk.net/start">
+        <img class="full-screen-image" src="Newsonwheels.jpg" alt="Customer Login">
+    </a>
 </body>
 </html>
