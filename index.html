@@ -8,15 +8,21 @@
             padding: 0;
         }
         .full-screen-image {
-            width: 100vw;
-            height: 100vh;
-            object-fit: cover;
+            width: 100%; /* Make the image responsive */
+            height: auto; /* Maintain aspect ratio */
+            max-width: 100%; /* Prevents exceeding screen width */
+        }
+        /* Optional: Allow zooming on mobile */
+        .full-screen-image {
+            touch-action: manipulation; /* For better touch handling */
         }
     </style>
 </head>
 <body>
-    <a href="https://cust.ppruk.net/start">
-        <img class="full-screen-image" src="Newsonwheels.jpg" alt="Customer Login">
-    </a>
+    <div style="overflow-y: auto;"> <!-- Allows scrolling -->
+        <a href="https://cust.ppruk.net/start">
+            <img class="full-screen-image" src="Newsonwheels.jpg" alt="Customer Login">
+        </a>
+    </div>
 </body>
 </html>
