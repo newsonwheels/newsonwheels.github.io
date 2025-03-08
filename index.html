@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <title>Index</title>
   <meta name="generator" content="Google Web Designer 16.2.0.0128">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style id="gwd-text-style">
     p {
       margin: 0px;
@@ -25,34 +26,34 @@
       height: 100%;
       margin: 0px;
       padding: 0px;
+      overflow: hidden; /* Prevent scrollbars */
     }
     body {
       background-color: transparent;
       transform: perspective(1400px) matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
       transform-style: preserve-3d;
+      position: relative;
     }
     body * {
       transform-style: preserve-3d;
     }
     .gwd-img-n8ve {
+      position: fixed; /* Fix image to viewport */
       object-fit: cover;
       width: 100%;
-      height: 100vh;
+      height: 100%;
       display: block;
       margin: 0;
       padding: 0;
       border: none;
-    }
-    .gwd-img-u05l {
-      position: absolute;
-      transform: translate(-50%, -50%);
-      left: 50%;
-      top: 50%;
+      top: 0;
+      left: 0;
+      z-index: -1; /* Place behind other elements */
     }
     .gwd-p-r3cy {
       position: absolute;
       width: 20vw;
-      height: auto;
+      min-height: 30vh; /* Set minimum height */
       background-image: none;
       font-size: 1.5vw;
       background-color: rgb(167, 152, 101);
@@ -61,6 +62,7 @@
       padding: 2vw;
       box-sizing: border-box;
       overflow-y: auto;
+      z-index: 1;
     }
     .gwd-button-1lh8 {
       position: absolute;
@@ -70,9 +72,10 @@
       background-color: rgb(167, 152, 101);
       font-size: 1.5vw;
       left: 2vw;
-      top: 55vh;
+      top: calc(20vh + 30vh + 4vh); /* Position after text box with gap */
       border-radius: 1vw;
       box-shadow: 0 0 5px rgba(0,0,0,0.2);
+      z-index: 1;
     }
     .gwd-button-contact {
       position: absolute;
@@ -81,10 +84,11 @@
       background-image: none;
       background-color: rgb(167, 152, 101);
       font-size: 1.5vw;
-      left: 2vw; /* Same left position as Customer Login button */
-      top: 62vh; /* Position it below the Customer Login button (55vh + 5vh + 2vh gap) */
+      left: 2vw;
+      top: calc(20vh + 30vh + 4vh + 5vh + 2vh); /* Position after first button with gap */
       border-radius: 1vw;
       box-shadow: 0 0 5px rgba(0,0,0,0.2);
+      z-index: 1;
     }
     .gwd-p-1hgo {
       position: absolute;
@@ -98,6 +102,7 @@
       top: 2vh;
       padding: 1vh;
       box-shadow: 0 0 5px rgba(0,0,0,0.2);
+      z-index: 1;
     }
     .gwd-span-771q {
       font-size: 6vh;
@@ -118,7 +123,7 @@
     @media (max-width: 768px) {
       .gwd-p-r3cy {
         width: 40vw;
-        height: auto;
+        min-height: 40vh;
         font-size: 2vw;
         left: 5vw;
         top: 20vh;
@@ -129,15 +134,15 @@
         height: 8vh;
         font-size: 2vw;
         left: 5vw;
-        top: 65vh;
+        top: calc(20vh + 40vh + 4vh); /* Position after text box with gap */
         border-radius: 2vw;
       }
       .gwd-button-contact {
         width: 40vw;
         height: 8vh;
         font-size: 2vw;
-        left: 5vw; /* Same left position as Customer Login button */
-        top: 75vh; /* Position it below the Customer Login button (65vh + 8vh + 2vh gap) */
+        left: 5vw;
+        top: calc(20vh + 40vh + 4vh + 8vh + 2vh); /* Position after first button with gap */
         border-radius: 2vw;
       }
       .gwd-p-1hgo {
