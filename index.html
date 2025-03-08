@@ -52,14 +52,15 @@
     .gwd-p-r3cy {
       position: absolute;
       width: 20vw;
-      height: 30vh;
+      height: auto;
       background-image: none;
       font-size: 1.5vw;
       background-color: rgb(167, 152, 101);
       left: 2vw;
       top: 20vh;
-      padding: 2vw; /* Add padding for better readability */
-      box-sizing: border-box; /* Ensure padding doesn't affect width */
+      padding: 2vw;
+      box-sizing: border-box;
+      overflow-y: auto;
     }
     .gwd-button-1lh8 {
       position: absolute;
@@ -70,7 +71,8 @@
       font-size: 1.5vw;
       left: 2vw;
       top: 55vh;
-      border-radius: 1vw; /* Add rounded corners for a modern look */
+      border-radius: 1vw;
+      box-shadow: 0 0 5px rgba(0,0,0,0.2);
     }
     .gwd-p-1hgo {
       position: absolute;
@@ -82,6 +84,8 @@
       font-family: "Playfair Display";
       left: 0vw;
       top: 2vh;
+      padding: 1vh;
+      box-shadow: 0 0 5px rgba(0,0,0,0.2);
     }
     .gwd-span-771q {
       font-size: 6vh;
@@ -92,7 +96,7 @@
     @media (max-width: 768px) {
       .gwd-p-r3cy {
         width: 40vw;
-        height: 40vh;
+        height: auto;
         font-size: 2vw;
         left: 5vw;
         top: 20vh;
