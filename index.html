@@ -81,8 +81,8 @@
       background-image: none;
       background-color: rgb(167, 152, 101);
       font-size: 1.5vw;
-      left: 25vw; /* Position it next to the Customer Login button */
-      top: 55vh;
+      left: 2vw; /* Same left position as Customer Login button */
+      top: 62vh; /* Position it below the Customer Login button (55vh + 5vh + 2vh gap) */
       border-radius: 1vw;
       box-shadow: 0 0 5px rgba(0,0,0,0.2);
     }
@@ -102,6 +102,16 @@
     .gwd-span-771q {
       font-size: 6vh;
       font-family: "Playfair Display";
+    }
+    
+    /* Button link styling */
+    button a {
+      display: block;
+      width: 100%;
+      height: 100%;
+      text-decoration: none;
+      color: black;
+      line-height: 5vh; /* Match button height for vertical centering */
     }
     
     /* Media Queries for Smaller Screens */
@@ -126,8 +136,8 @@
         width: 40vw;
         height: 8vh;
         font-size: 2vw;
-        left: 50vw;
-        top: 65vh;
+        left: 5vw; /* Same left position as Customer Login button */
+        top: 75vh; /* Position it below the Customer Login button (65vh + 8vh + 2vh gap) */
         border-radius: 2vw;
       }
       .gwd-p-1hgo {
@@ -138,6 +148,9 @@
       }
       .gwd-span-771q {
         font-size: 8vh;
+      }
+      button a {
+        line-height: 8vh; /* Match button height for vertical centering */
       }
     }
   </style>
