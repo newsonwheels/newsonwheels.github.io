@@ -52,12 +52,15 @@
     .gwd-p-r3cy {
       position: absolute;
       width: 20vw;
-      height: 30vh;
+      height: auto;
       background-image: none;
       font-size: 1.5vw;
       background-color: rgb(167, 152, 101);
       left: 2vw;
       top: 20vh;
+      padding: 2vw;
+      box-sizing: border-box;
+      overflow-y: auto;
     }
     .gwd-button-1lh8 {
       position: absolute;
@@ -68,6 +71,20 @@
       font-size: 1.5vw;
       left: 2vw;
       top: 55vh;
+      border-radius: 1vw;
+      box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    }
+    .gwd-button-contact {
+      position: absolute;
+      width: 20vw;
+      height: 5vh;
+      background-image: none;
+      background-color: rgb(167, 152, 101);
+      font-size: 1.5vw;
+      left: 25vw; /* Position it next to the Customer Login button */
+      top: 55vh;
+      border-radius: 1vw;
+      box-shadow: 0 0 5px rgba(0,0,0,0.2);
     }
     .gwd-p-1hgo {
       position: absolute;
@@ -79,6 +96,8 @@
       font-family: "Playfair Display";
       left: 0vw;
       top: 2vh;
+      padding: 1vh;
+      box-shadow: 0 0 5px rgba(0,0,0,0.2);
     }
     .gwd-span-771q {
       font-size: 6vh;
@@ -89,10 +108,11 @@
     @media (max-width: 768px) {
       .gwd-p-r3cy {
         width: 40vw;
-        height: 40vh;
+        height: auto;
         font-size: 2vw;
         left: 5vw;
         top: 20vh;
+        padding: 3vw;
       }
       .gwd-button-1lh8 {
         width: 40vw;
@@ -100,6 +120,15 @@
         font-size: 2vw;
         left: 5vw;
         top: 65vh;
+        border-radius: 2vw;
+      }
+      .gwd-button-contact {
+        width: 40vw;
+        height: 8vh;
+        font-size: 2vw;
+        left: 50vw;
+        top: 65vh;
+        border-radius: 2vw;
       }
       .gwd-p-1hgo {
         width: 100vw;
@@ -116,9 +145,10 @@
 </head>
 
 <body class="htmlNoPages">
-  <img src="Newsonwheels.jpg" class="gwd-img-n8ve">
+  <img src="assets/Newsonwheels.jpg" class="gwd-img-n8ve">
   <p class="gwd-p-r3cy">Locations we deliver to... list villages<br><br>We deliver sun mail etc etc<br><br>7 days a week 364 days a year</p>
   <button id="button_1" class="gwd-button-1lh8"><a href="https://cust.ppruk.net/start" target="_blank">Customer Login</a></button>
+  <button id="contact_button" class="gwd-button-contact"><a href="contact.html">Contact Us</a></button>
   <p class="gwd-p-1hgo"><span class="gwd-span-771q">NEWS ON WHEELS</span><br></p>
 </body>
 
