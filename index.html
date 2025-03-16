@@ -26,7 +26,7 @@
       height: 100%;
       margin: 0px;
       padding: 0px;
-      overflow: hidden;
+      overflow: visible;
     }
     body {
       background-color: transparent;
@@ -72,10 +72,8 @@
       position: absolute;
       display: flex;
       gap: 2vw;
-      right: 2vw;
-      z-index: 1;
-      left: 884px;
-      top: 664px;
+      inset: 806px 2vw 2vh 789px;
+      z-index: 1000;
     }
     .gwd-button {
       width: 15vw;
@@ -99,6 +97,7 @@
       box-sizing: border-box;
       overflow-y: auto;
       z-index: 1;
+      bottom: 7vh;
     }
     button a {
       display: block;
@@ -120,7 +119,7 @@
       }
       .button-container {
         right: 5vw;
-        top: calc(12vh);
+        bottom: 5vh;
       }
       .gwd-button {
         width: 30vw;
@@ -135,6 +134,7 @@
         left: 5vw;
         top: calc(25vh);
         padding: 3vw;
+        bottom: 13vh;
       }
       button a {
         line-height: 8vh;
@@ -147,11 +147,11 @@
 <body class="htmlNoPages">
   <img src="Newsonwheels.jpg" class="gwd-img-n8ve">
   <p class="gwd-p-1hgo"><span class="gwd-span-771q">NEWS ON WHEELS</span><br></p>
+  <p class="gwd-p-r3cy">A Father and Daughter business, delivering Newspapers and Magazines 364 days a year.<br><br>Including local papers Winslow and Buckingham Advertiser and Bucks Herald.<br><br>Delivering to Steeple Claydon, Padbury, Winslow and surrounding villages including Nash, Great Horwood, Whaddon and more.<br><br>Click contact us for more information.</p>
   <div class="button-container">
     <button id="button_1" class="gwd-button"><a href="https://cust.ppruk.net/start" target="_blank">Customer Login</a></button>
     <button id="contact_button" class="gwd-button"><a href="contact.html">Contact Us</a></button>
   </div>
-  <p class="gwd-p-r3cy">A Father and Daughter business, delivering Newspapers and Magazines 364 days a year.<br><br>Including local papers Winslow and Buckingham Advertiser and Bucks Herald.<br><br>Delivering to Steeple Claydon, Padbury, Winslow and surrounding villages including Nash, Great Horwood, Whaddon and more.<br><br>Click contact us for more information.</p>
 </body>
 
 </html>
