@@ -46,50 +46,9 @@
       margin: 0px;
       padding: 0px;
       border: none;
-      top: 0px;
       z-index: -1;
       left: 0px;
-    }
-    .gwd-p-r3cy {
-      position: absolute;
-      width: 20vw;
-      min-height: 30vh;
-      background-image: none;
-      font-size: 1.5vw;
-      background-color: rgb(167, 152, 101);
-      left: 2vw;
-      top: 20vh;
-      padding: 2vw;
-      box-sizing: border-box;
-      overflow-y: auto;
-      z-index: 1;
-    }
-    .gwd-button-1lh8 {
-      position: absolute;
-      width: 20vw;
-      height: 5vh;
-      background-image: none;
-      background-color: rgb(167, 152, 101);
-      font-size: 1.5vw;
-      left: 2vw;
-      top: calc(54vh);
-      border-radius: 1vw;
-      box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 5px;
-      z-index: 1;
-      transform: translate3d(677px, -262px, 0px) rotateZ(-0.34172deg);
-    }
-    .gwd-button-contact {
-      position: absolute;
-      width: 20vw;
-      height: 5vh;
-      background-image: none;
-      background-color: rgb(167, 152, 101);
-      font-size: 1.5vw;
-      left: calc(2vw + 20vw + 2vw); /* Adjusted to place it to the right */
-      top: calc(54vh); /* Adjusted to align vertically with the login button */
-      border-radius: 1vw;
-      box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 5px;
-      z-index: 1;
+      top: 0px;
     }
     .gwd-p-1hgo {
       position: absolute;
@@ -109,6 +68,38 @@
       font-size: 6vh;
       font-family: "Playfair Display";
     }
+    .button-container {
+      position: absolute;
+      display: flex;
+      gap: 2vw;
+      right: 2vw;
+      z-index: 1;
+      left: 746px;
+      top: 118px;
+    }
+    .gwd-button {
+      width: 15vw;
+      height: 5vh;
+      background-image: none;
+      background-color: rgb(167, 152, 101);
+      font-size: 1.5vw;
+      border-radius: 1vw;
+      box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 5px;
+    }
+    .gwd-p-r3cy {
+      position: absolute;
+      width: 20vw;
+      min-height: 30vh;
+      background-image: none;
+      font-size: 1.5vw;
+      background-color: rgb(167, 152, 101);
+      left: 2vw;
+      top: calc(20vh);
+      padding: 2vw;
+      box-sizing: border-box;
+      overflow-y: auto;
+      z-index: 1;
+    }
     button a {
       display: block;
       width: 100%;
@@ -117,35 +108,7 @@
       color: black;
       line-height: 5vh;
     }
-    .gwd-a-1shf {
-      left: 6px;
-      top: 1px;
-    }
     @media (min-width: 0) and (max-width: 768px) and (min-height: 0) and (max-height: 4000px) {
-      .gwd-p-r3cy {
-        width: 40vw;
-        min-height: 40vh;
-        font-size: 2vw;
-        left: 5vw;
-        top: 20vh;
-        padding: 3vw;
-      }
-      .gwd-button-1lh8 {
-        width: 40vw;
-        height: 8vh;
-        font-size: 2vw;
-        left: 5vw;
-        top: calc(64vh);
-        border-radius: 2vw;
-      }
-      .gwd-button-contact {
-        width: 40vw;
-        height: 8vh;
-        font-size: 2vw;
-        left: calc(5vw + 40vw + 5vw); /* Adjusted for mobile layout */
-        top: calc(64vh); /* Aligns vertically with the login button on mobile */
-        border-radius: 2vw;
-      }
       .gwd-p-1hgo {
         width: 100vw;
         height: 10vh;
@@ -154,6 +117,24 @@
       }
       .gwd-span-771q {
         font-size: 8vh;
+      }
+      .button-container {
+        right: 5vw;
+        top: calc(12vh);
+      }
+      .gwd-button {
+        width: 30vw;
+        height: 8vh;
+        font-size: 2vw;
+        border-radius: 2vw;
+      }
+      .gwd-p-r3cy {
+        width: 40vw;
+        min-height: 40vh;
+        font-size: 2vw;
+        left: 5vw;
+        top: calc(25vh);
+        padding: 3vw;
       }
       button a {
         line-height: 8vh;
@@ -165,10 +146,12 @@
 
 <body class="htmlNoPages">
   <img src="Newsonwheels.jpg" class="gwd-img-n8ve">
-  <p class="gwd-p-r3cy">A Father and Daughter business, delivering Newspapers and Magazines 364 days a year.<br><br>Including local papers Winslow and Buckingham Advertiser and Bucks Herald.<br><br>Delivering to Steeple Claydon, Padbury, Winslow and surrounding villages including Nash, Great Horwood, Whaddon and more.<br><br>Click contact us for more information.</p>
-  <button id="button_1" class="gwd-button-1lh8"><a href="https://cust.ppruk.net/start" target="_blank">Customer Login</a></button>
-  <button id="contact_button" class="gwd-button-contact"><a href="contact.html">Contact Us</a></button>
   <p class="gwd-p-1hgo"><span class="gwd-span-771q">NEWS ON WHEELS</span><br></p>
+  <div class="button-container">
+    <button id="button_1" class="gwd-button"><a href="https://cust.ppruk.net/start" target="_blank">Customer Login</a></button>
+    <button id="contact_button" class="gwd-button"><a href="contact.html">Contact Us</a></button>
+  </div>
+  <p class="gwd-p-r3cy">A Father and Daughter business, delivering Newspapers and Magazines 364 days a year.<br><br>Including local papers Winslow and Buckingham Advertiser and Bucks Herald.<br><br>Delivering to Steeple Claydon, Padbury, Winslow and surrounding villages including Nash, Great Horwood, Whaddon and more.<br><br>Click contact us for more information.</p>
 </body>
 
 </html>
