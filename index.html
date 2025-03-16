@@ -53,7 +53,7 @@
     .gwd-p-r3cy {
       position: absolute;
       width: 20vw;
-      min-height: 30vh;
+      height: 23.4vh; /* Set the height to the calculated value */
       background-image: none;
       font-size: 1.5vw;
       background-color: rgb(167, 152, 101);
@@ -61,9 +61,8 @@
       top: 20vh;
       padding: 2vw;
       box-sizing: border-box;
-      overflow-y: auto;
+      overflow-y: hidden; /* Change to hidden to prevent scrolling */
       z-index: 1;
-      bottom: 7vh; /* Adjusted to align with buttons */
     }
     .gwd-button-1lh8 {
       position: absolute;
@@ -120,12 +119,11 @@
     @media (min-width: 0) and (max-width: 768px) and (min-height: 0) and (max-height: 4000px) {
       .gwd-p-r3cy {
         width: 40vw;
-        min-height: 40vh;
+        height: 40vh; /* Adjusted for mobile */
         font-size: 2vw;
         left: 5vw;
         top: 20vh;
         padding: 3vw;
-        bottom: 13vh; /* Adjusted for mobile */
       }
       .gwd-button-1lh8 {
         width: 40vw;
