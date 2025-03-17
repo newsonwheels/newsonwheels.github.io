@@ -47,20 +47,13 @@
     button[type="submit"]:hover {
       background-color: #0056b3;
     }
-    .success-message {
-      display: none;
-      color: green;
-      font-weight: bold;
-      margin-bottom: 20px;
-    }
   </style>
 </head>
 
 <body>
   <div class="container">
     <h2>Contact Us</h2>
-    <div class="success-message" id="success">Message sent successfully!</div>
-    <form action="https://formspree.io/f/xdkenypp" method="POST" id="contactForm">
+    <form action="https://formspree.io/f/xdkenypp" method="POST">
       <label for="name">Name:</label>
       <input type="text" id="name" name="name" required>
       <label for="email">Email:</label>
@@ -70,17 +63,6 @@
       <button type="submit">Send</button>
     </form>
   </div>
-
-  <script>
-    const form = document.getElementById('contactForm');
-    form.addEventListener('submit', function(event) {
-      event.preventDefault(); // Prevent default form submission behavior
-      // Simulate form submission success (you might need to adjust based on Formspree's API)
-      document.getElementById('success').style.display = 'block';
-      // Clear form fields
-      form.reset();
-    });
-  </script>
 </body>
 
 </html>
